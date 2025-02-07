@@ -1,0 +1,53 @@
+{
+  "name": "express-jwt-auth-handler",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Secure JWT authentication package with refresh and access token handling for Express applications",
+  "keywords": [
+    "auth",
+    "jwt",
+    "authentication",
+    "tokens",
+    "refresh-token",
+    "express",
+    "typescript",
+    "cookie"
+  ],
+  "author": {
+    "name": "Harris Malik",
+    "email": "harrismalik.work@gmail.com",
+    "website": "mharrismalik.com"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/harrismalik/express-jwt-auth-handler.git"
+  },
+  "bugs": {
+    "url": "https://github.com/harrismalik/express-jwt-auth-handler/issues"
+  },
+  "homepage": "https://github.com/harrismalik/express-jwt-auth-handler#readme",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsup src/index.ts --format cjs,esm --dts",
+    "lint": "tsc"
+  },
+  "devDependencies": {
+    "@changesets/cli": "^2.27.12",
+    "@types/express": "^5.0.0",
+    "@types/jsonwebtoken": "^9.0.8",
+    "express": "^4.21.2",
+    "jsonwebtoken": "^9.0.2",
+    "tsup": "^8.3.6",
+    "typescript": "^5.7.3"
+  },
+  "peerDependencies": {
+    "express": "^4.21.2",
+    "jsonwebtoken": "^9.0.2"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
