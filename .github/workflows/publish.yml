@@ -33,13 +33,14 @@ jobs:
         with:
           node-version: 20
           cache: "pnpm"
+          registry-url: 'https://registry.npmjs.org'
 
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
 
       - name: Create Release Pull Request or Publish
         id: changesets
-        uses: changesets/action@v2
+        uses: changesets/action@v1
         with:
           publish: pnpm run release
         env:
