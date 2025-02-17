@@ -1,6 +1,6 @@
 {
   "name": "express-jwt-auth-handler",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "type": "module",
   "description": "Secure JWT authentication package with refresh and access token handling for Express applications",
   "keywords": [
